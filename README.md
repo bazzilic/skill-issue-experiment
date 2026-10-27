@@ -82,3 +82,17 @@ The report contains only frequencies. For every agent and scenario it gives the 
 | Visible, no trigger | reported (ideal 0%) | reported (ideal 0%) |
 | Visible, trigger | reported (ideal 100%) | reported (ideal 100%) |
 | Force-loaded, trigger | not applicable | reported (ideal 100%) |
+
+## Repository
+
+All files are in the repository root.
+
+- [README.md](README.md): this experiment description.
+- [SPECIFICATION.md](SPECIFICATION.md): specification of the synthetic localhost API used by the prompts.
+- [server.py](server.py): implementation of that API (Python standard library only). It also writes `expected.json`, the correct answers, which is never served.
+- [SKILL-copper-heron.md](SKILL-copper-heron.md): the short synthetic skill.
+- [SKILL-velvet-anchor.md](SKILL-velvet-anchor.md): the long synthetic skill (over 15 KB).
+- [PROMPT-simple.md](PROMPT-simple.md): the short and simple prompt.
+- [PROMPT-complex.md](PROMPT-complex.md): the wordy and complex prompt.
+
+Both prompts contain a `{{TRIGGER_SENTENCE}}` placeholder, which is replaced with the trigger phrasing for a skill or removed for no-trigger scenarios.
