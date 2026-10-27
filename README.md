@@ -90,6 +90,8 @@ All files are in the repository root.
 - [README.md](README.md): this experiment description.
 - [SPECIFICATION.md](SPECIFICATION.md): specification of the synthetic localhost API used by the prompts.
 - [server.py](server.py): implementation of that API (Python standard library only). It also writes `expected.json`, the correct answers, which is never served.
+- [orchestrator.py](orchestrator.py): builds the image, runs the sessions in containers and writes the report (`python3 orchestrator.py build | run | report`). Sessions and the report are stored in `runs/`, which is git-ignored.
+- [Dockerfile](Dockerfile): the agent image, with pinned Claude Code and Codex versions.
 - [SKILL-copper-heron.md](SKILL-copper-heron.md): the short synthetic skill.
 - [SKILL-velvet-anchor.md](SKILL-velvet-anchor.md): the long synthetic skill (over 15 KB).
 - [PROMPT-simple.md](PROMPT-simple.md): the short and simple prompt.
