@@ -1,0 +1,1 @@
+2026-10-27T14:47:56.598948Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: "Rejected(\"`/bin/bash -lc 'rm -f /tmp/order_reconcile.py /tmp/order_reconcile_snapshot.json && python3 -m json.tool /workspace/result.json >/dev/null && ls -la /workspace'` rejected: rm -f style commands are not permitted. Use a safer approach\")" }

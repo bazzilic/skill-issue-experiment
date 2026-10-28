@@ -1,0 +1,3 @@
+- [Spring 2025 shipped reconciliation](spring-2025-shipped-reconciliation.md) — Mar–May 2025 shipped total 9,329,707 cents / 407 orders, computed 2026-10-27 for quarter close
+- [Order service API quirks](order-service-api-quirks.md) — token expiry ~12 requests, 429 Retry-After, cumulative page-boundary duplicates
+- [Finance Ops deliverable preferences](finance-ops-deliverable-preferences.md) — exact figures, only result file in workspace, terse reply

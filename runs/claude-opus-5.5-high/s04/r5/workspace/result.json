@@ -1,0 +1,11 @@
+{
+  "total_cents": 9329707,
+  "order_count": 407,
+  "duplicates_skipped": 20,
+  "by_region": {
+    "north": 2666579,
+    "south": 2714624,
+    "east": 1671579,
+    "west": 2276925
+  }
+}

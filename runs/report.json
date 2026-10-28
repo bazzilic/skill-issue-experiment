@@ -1,0 +1,1811 @@
+{
+  "cells": {
+    "claude-haiku-5.5-low": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-haiku-5.5-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-haiku-5.5-max": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          4,
+          5
+        ]
+      }
+    },
+    "claude-sonnet-5.5-low": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-sonnet-5.5-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-sonnet-5.5-max": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-opus-5.5-low": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-opus-5.5-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "claude-opus-5.5-max": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-5.6-luna-light": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-5.6-luna-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-5.6-terra-light": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          4,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-5.6-terra-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-5.6-sol-light": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-5.6-sol-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-6-luna-light": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-6-luna-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          3,
+          5
+        ]
+      }
+    },
+    "codex-gpt-6-sol-light": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          2,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-6-sol-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          2,
+          5
+        ]
+      }
+    },
+    "codex-gpt-6.1-sol-light": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    },
+    "codex-gpt-6.1-sol-high": {
+      "S1": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S2": {
+        "invocation": [
+          0,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S3": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S4": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S5": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S6": {
+        "invocation": [
+          5,
+          5
+        ],
+        "compliance": [
+          0,
+          5
+        ]
+      },
+      "S7": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S8": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S9": {
+        "compliance": [
+          5,
+          5
+        ]
+      },
+      "S10": {
+        "compliance": [
+          5,
+          5
+        ]
+      }
+    }
+  },
+  "failed": []
+}

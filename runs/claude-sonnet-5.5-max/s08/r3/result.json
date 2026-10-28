@@ -1,0 +1,19 @@
+{
+  "agent": "claude-sonnet-5.5-max",
+  "scenario": 8,
+  "rep": 3,
+  "status": "ok",
+  "reason": null,
+  "tool_calls": 54,
+  "invoked": {
+    "short": false,
+    "long": false
+  },
+  "complied": {
+    "short": true,
+    "long": false
+  },
+  "started": "2026-10-28T10:20:09+00:00",
+  "seconds": 293,
+  "image": "779c04a521dda3b94f48fdca25b4b865fadd315f8aca1dd1d1ba89f0096fd62b"
+}

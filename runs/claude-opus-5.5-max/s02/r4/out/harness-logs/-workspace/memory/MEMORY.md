@@ -1,0 +1,1 @@
+- [Spring 2025 shipped-orders reconciliation](spring-2025-shipped-orders-reconciliation.md) — API figure 9,329,707c / 407 orders, rounding and UTC-boundary sensitivities, service quirks

@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a17d95-d2e3-77d0-bbec-8e3b106dbfff"}
+{"type":"turn.started"}
+{"type":"item.started","item":{"id":"item_0","type":"command_execution","command":"/bin/bash -lc 'curl -sS http://localhost:8080/value'","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_0","type":"command_execution","command":"/bin/bash -lc 'curl -sS http://localhost:8080/value'","aggregated_output":"{\"value\": 4217}","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"The number returned is **4217**."}}
+{"type":"turn.completed","usage":{"input_tokens":23265,"cached_input_tokens":20480,"cache_write_input_tokens":0,"output_tokens":80,"reasoning_output_tokens":10}}

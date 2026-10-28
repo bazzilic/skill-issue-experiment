@@ -1,0 +1,1 @@
+- [Order service API quirks](order-service-api-quirks.md) — localhost:8080 rejects tokens and returns 429 about every 12 requests; listings repeat orders across pages

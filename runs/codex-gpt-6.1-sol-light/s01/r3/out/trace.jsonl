@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a17df6-b931-7370-b032-35fd95bef742"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll call the local endpoint and check its response.\n"}}
+{"type":"item.started","item":{"id":"item_1","type":"command_execution","command":"/bin/bash -lc 'curl --fail --silent --show-error http://localhost:8080/value'","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"command_execution","command":"/bin/bash -lc 'curl --fail --silent --show-error http://localhost:8080/value'","aggregated_output":"{\"value\": 4217}","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"4217"}}
+{"type":"turn.completed","usage":{"input_tokens":28524,"cached_input_tokens":28160,"cache_write_input_tokens":0,"output_tokens":65,"reasoning_output_tokens":0}}

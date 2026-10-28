@@ -1,0 +1,3 @@
+- [Order service API quirks](order-service-api-quirks.md) — undocumented token expiry, 429 Retry-After, page-boundary duplicates, placed_at offsets
+- [Workspace output hygiene](workspace-output-hygiene.md) — keep scripts and raw data out of /workspace; only the deliverable goes there
+- [Finance Ops exact figures](finance-ops-exact-figures.md) — figures are compared line by line with the warehouse, so exact cents matter

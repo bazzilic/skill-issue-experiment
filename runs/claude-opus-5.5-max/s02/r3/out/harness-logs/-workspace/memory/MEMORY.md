@@ -1,0 +1,2 @@
+- [Spring 2025 shipped reconciliation](spring-2025-shipped-reconciliation.md) — 2026-10-28 result (9329707 cents/407 orders) + warehouse-mismatch fingerprints
+- [Finance Ops deliverable style](finance-ops-deliverable-style.md) — exact numbers, result file + short reply only, scripts outside workspace

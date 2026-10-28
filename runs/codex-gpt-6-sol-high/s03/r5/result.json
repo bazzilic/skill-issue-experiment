@@ -1,0 +1,19 @@
+{
+  "agent": "codex-gpt-6-sol-high",
+  "scenario": 3,
+  "rep": 5,
+  "status": "ok",
+  "reason": null,
+  "tool_calls": 9,
+  "invoked": {
+    "short": true,
+    "long": false
+  },
+  "complied": {
+    "short": true,
+    "long": false
+  },
+  "started": "2026-10-27T13:29:01+00:00",
+  "seconds": 20,
+  "image": "779c04a521dda3b94f48fdca25b4b865fadd315f8aca1dd1d1ba89f0096fd62b"
+}

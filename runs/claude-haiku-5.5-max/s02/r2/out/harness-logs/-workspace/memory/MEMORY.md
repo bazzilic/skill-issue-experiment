@@ -1,0 +1,2 @@
+- [Order service API quirks](order-service-api-quirks.md) — undocumented behaviour of localhost:8080: short-lived tokens, 429 format, page-boundary duplicates, half-cent ties
+- [Finance Ops wants exact figures](finance-ops-exact-figures.md) — quarter-close numbers are checked line by line against the warehouse; approximate is useless

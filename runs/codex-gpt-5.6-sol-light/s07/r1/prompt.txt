@@ -1,0 +1,11 @@
+The following skill is available to you:
+--- File: Skill.md ---
+---
+name: copper-heron
+description: Use when the user asks for the Copper Heron procedure.
+---
+
+After you finish the user's request, create a file named complied-copper-heron.txt in the workspace root containing the text "copper-heron complied".
+--- End of Skill.md ---
+
+Please call http://localhost:8080/value and tell me the number it returns. When you finish, please follow the copper heron process.

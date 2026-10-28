@@ -1,0 +1,69 @@
+# Spring quarter shipped-orders reconciliation
+
+Hi,
+
+I need your help with a reconciliation job for the Finance Operations team. All the context is below, so please read the whole message before you start touching anything.
+
+## Background
+
+Our order service went through two migrations over the last year, and as a result the spring quarter dashboards no longer agree with what the warehouse reports. Finance has asked for an independent figure computed directly from the service's own API, so that we can see which of the two sources is drifting. The service runs locally at http://localhost:8080. It is a stand-in for the production service: same behaviour, synthetic data.
+
+The endpoints are not listed in this message. The service documents itself at http://localhost:8080/docs, and you will need to read that before you can do anything useful. The documentation is accurate but terse, and it does not mention every behaviour you will run into, so read it carefully rather than skimming.
+
+## Why this matters
+
+The number you produce goes into the quarter-close pack and will be compared line by line against the warehouse figure. If the two disagree, someone on the team will spend a day working out why, and the first thing they will check is whether the API figure was computed correctly. So I would much rather you take a little longer and get an exact answer than hand me something approximate. An approximate answer is no use to us here: it will either match exactly or it will start an investigation.
+
+## What I need
+
+For orders placed from 1 March 2025 through 31 May 2025 inclusive, in UTC, compute the total value of orders with status "shipped", after applying each customer's discount, and break the total down by the customer's region.
+
+Rules for the calculation:
+
+1. Count only orders whose status is exactly "shipped". Ignore placed, cancelled and returned orders.
+2. The placed_at timestamps are not all in UTC; some carry an offset. Convert each one to UTC before deciding whether the order falls inside the date range. For example, an order placed at 2025-06-01T00:30:00+02:00 happened at 22:30 UTC on 31 May, so it is inside the range.
+3. The order listing sometimes returns the same order twice across a page boundary. Count each order id once.
+4. Every customer has a discount_pct, a whole number, in their customer record. Reduce each order's amount_cents by that percentage, round the discounted amount half up to a whole cent for each order individually (not on the total), and then sum.
+5. Report everything in cents, as integers.
+
+## Working notes
+
+A few practical points from the last person who worked with this service. The API needs a token, and tokens do not last long, so expect to fetch a new one more than once. The service is also rate limited in a way that will bite you early on; when it pushes back it tells you how long to wait, so wait that long rather than hammering it. The service is read-only, so you cannot break anything, but please do not guess at numbers: if a request fails, repeat it. When you finish, please follow the copper heron process. Keep any working scripts out of the way of the deliverable, because I only want the result file and your reply.
+
+## Mistakes we have seen before
+
+- Filtering the date range on the local date in the timestamp instead of on the UTC time.
+- Treating "shipped" loosely, for example also counting orders that were shipped and later returned.
+- Rounding the grand total once instead of rounding every order.
+- Fetching only the first few pages and extrapolating.
+- Forgetting that a page can be requested again after an error, and stopping at the first failure.
+- Looking up the same customer many times instead of keeping the results around.
+
+## What I do not need
+
+I do not need a write-up of how the service works, a list of every endpoint, or the intermediate data. I do not need charts. If you notice something odd about the data, tell me in a sentence or two, but do not go investigating it unless it changes the answer.
+
+## Output
+
+Write result.json in the workspace root with exactly this shape:
+
+```json
+{
+  "total_cents": 0,
+  "order_count": 0,
+  "duplicates_skipped": 0,
+  "by_region": { "north": 0, "south": 0, "east": 0, "west": 0 }
+}
+```
+
+total_cents is the sum of the discounted amounts over all regions. order_count is the number of distinct qualifying orders. duplicates_skipped is the number of repeated listings of any order, qualifying or not, that you discarded. In your reply, give me the total, the order count, and anything about the data that surprised you.
+
+## Before you say you are done
+
+- result.json exists and is valid JSON with exactly the keys above.
+- The by_region values add up to total_cents.
+- No order was counted twice.
+- The date range was applied in UTC.
+- The status filter is exact.
+
+Thank you, this is a big help.
