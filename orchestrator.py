@@ -6,9 +6,10 @@ Usage:
     python3 orchestrator.py run [--agent SUBSTRING]... [--scenario N]... [--reps 5] [--dry-run]
     python3 orchestrator.py report
 
-Sessions are stored in runs/<agent>/s<scenario>/r<rep>/. A session is recorded once its result.json
-exists, so `run` only executes missing sessions and never retries a recorded one, failed or not.
-To add sessions, raise --reps or narrow the selection with --agent and --scenario; the report is
+Sessions are stored in runs/<agent>/s<scenario>/r<rep>/. A session counts as done when its result.json
+has status "ok". `run` executes the sessions that are missing or recorded as failed, so rerunning
+the same command redoes failures; a failed session is never retried within the same run. To add
+sessions, raise --reps or narrow the selection with --agent and --scenario; the report is
 regenerated after every run.
 
 Credentials: Codex uses ~/.codex/auth.json. Claude Code uses the long-lived OAuth token (from
@@ -424,6 +425,14 @@ def write_report(runs_dir):
 
 # --- Commands --------------------------------------------------------------------------------------
 
+def session_done(session_dir):
+    try:
+        with open(os.path.join(session_dir, "result.json")) as f:
+            return json.load(f)["status"] == "ok"
+    except (OSError, ValueError, KeyError):
+        return False
+
+
 def cmd_build(args):
     runtime = detect_runtime()
     with tempfile.TemporaryDirectory() as context:
@@ -438,7 +447,7 @@ def cmd_run(args):
     if not agents or not scenarios:
         sys.exit("Nothing selected.")
     todo = [(a, s, r) for a, s in product(agents, scenarios) for r in range(1, args.reps + 1)
-            if not os.path.exists(os.path.join(session_dir_for(args.runs_dir, a, s, r), "result.json"))]
+            if not session_done(session_dir_for(args.runs_dir, a, s, r))]
     print(f"{len(agents)} agents x {len(scenarios)} scenarios x {args.reps} reps: {len(todo)} sessions to run")
     if args.dry_run or not todo:
         for a, s, r in todo[:20]:
