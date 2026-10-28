@@ -44,7 +44,7 @@ The following skill is available to you:
 
 A full agent test gets one agent to execute the full trial 5 times.
 
-We run full tests for:
+The following agents participated in the experiment:
 
 - Claude Code, Haiku 5.5, Low
 - Claude Code, Haiku 5.5, High
