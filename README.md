@@ -1,15 +1,16 @@
 # README.md
 
-In this repository we test skill invocation and compliance reliability by different agents.
+This repository contains an experiment designed to test reliability of skill invocation (loading) and compliance (following) by different agents.
+
+To run, just ask your agent. But you will need to fiddle with the Codex and Claude authorization first to make it work on your host. Take note that in default configuration, it runs over a thousand sessions with agents, including the expensive ones, and eats into your limits like crazy.
 
 ## Experiment Specification
 
-Experiment is held over a set of different agents and requires every agent to do several attempts to go through a trial.
-A trial tests different scenarios in which the agent should or should not invoke a skill.
+Experiment is held over a set of different agents and requires every agent to do several attempts to go through a trial. A trial tests different scenarios in which the agent should or should not invoke a skill.
 
 ### Skills
 
-We create two synthetic skills, each contains a distinct trigger in the description. In the agent prompts we use phrasing that is very close to the trigger but is not 100% identical.
+There are two synthetic skills, each contains a distinct trigger in the description. Agent prompts use phrasing that is very close to the trigger but is not 100% identical.
 
 One skill is extremely short, another is very wordy and large, at least 15 KB.
 
@@ -32,7 +33,7 @@ A full trial consists of the following scenarios:
 
 In scenarios where skills are force-loaded, they are not seen by the harness as a skill definition file. In the prompt, they are explicitly indicated to be a verbatim skill file inclusion including the frontmatter, surrounded by clear delimiters:
 
-```
+```markdown
 The following skill is available to you:
 --- File: Skill.md ---
 ...
@@ -69,13 +70,13 @@ We run full tests for:
 
 ## Execution Environment
 
-To ensure proper isolation and repeatability, each scenario should run in a separate, fresh container (docker or podman, depending on what is available). At any time, orchestrator should run no more than 5 containers in parallel. If a scenario fails for any reason, the final report should indicate that but not undertake any retries. Orchestrator should be able to do targeted additional trials/scenarios on request and recalculate the report with new data.
+To ensure proper isolation and repeatability, each scenario runs in a separate, fresh container (docker or podman, depending on what is available). At any time, orchestrator runs no more than 5 containers in parallel. If a scenario fails for any reason, the final report indicates that but does not undertake any retries. Orchestrator can do targeted additional trials/scenarios on request and recalculate the report with new data.
 
 ## Results and Metrics
 
-Full trace of every session should be saved after the scenario finishes. Invocation of the skill (reading the skill file) is tested by analyzing the trace. Compliance is tested by checking that skill was executed.
+Full trace of every session is saved after the scenario finishes. Invocation of the skill (reading the skill file) is tested by analyzing the trace. Compliance is tested by checking that skill was executed.
 
-The report contains only frequencies. For every agent and scenario it gives the invocation frequency and the compliance frequency as k/n (percentage), where n is the number of sessions that ran to completion; failed sessions are listed separately and excluded from n. In scenarios with a trigger, a session counts as invoked when the trace shows the triggered skill's file being read, and as compliant when that skill's own indicator file exists in the workspace root with the expected text at the end of the session; the other skill's file does not count. In no-trigger scenarios, either skill's invocation or indicator file counts. Force-loaded scenarios have nothing to invoke, so only compliance is reported for them.
+For every agent and scenario, the report provides the invocation frequency and the compliance frequency as `k/n` (percentage), where `n` is the number of sessions that ran to completion; failed sessions are listed separately and excluded from `n`. In scenarios with a trigger, a session counts as invoked when the trace shows the triggered skill's file being read, and as compliant when that skill's own indicator file exists in the workspace root with the expected text at the end of the session; the other skill's file does not count. In no-trigger scenarios, either skill's invocation or indicator file counts. Force-loaded scenarios have nothing to invoke, so only compliance is reported for them.
 
 | Scenario group | Invocation frequency | Compliance frequency |
 | --- | --- | --- |
@@ -85,7 +86,7 @@ The report contains only frequencies. For every agent and scenario it gives the 
 
 ## Repository
 
-All files are in the repository root.
+The following files and folders are in the repository root:
 
 - [README.md](README.md): this experiment description.
 - [SPECIFICATION.md](SPECIFICATION.md): specification of the synthetic localhost API used by the prompts.
@@ -96,5 +97,6 @@ All files are in the repository root.
 - [SKILL-velvet-anchor.md](SKILL-velvet-anchor.md): the long synthetic skill (over 15 KB).
 - [PROMPT-simple.md](PROMPT-simple.md): the short and simple prompt.
 - [PROMPT-complex.md](PROMPT-complex.md): the wordy and complex prompt.
+- [runs/](runs/): traces and workspace artifacts of all runs done with the aforementioned agents and Claude Code v2.1.308 and Codex v0.164.0.
 
 Both prompts contain a `{{TRIGGER_SENTENCE}}` placeholder, which is replaced with the trigger phrasing for a skill or removed for no-trigger scenarios.
