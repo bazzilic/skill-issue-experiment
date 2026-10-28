@@ -1,6 +1,6 @@
 # README.md
 
-This repository contains an experiment designed to test reliability of skill invocation (loading) and compliance (following) by different agents.
+This repository contains an experiment designed to test reliability of skill invocation (loading) and compliance (following) by different agents. Results are [below](#results-and-metrics).
 
 To run, just ask your agent. But you will need to fiddle with the Codex and Claude authorization first to make it work on your host. Take note that in default configuration, it runs over a thousand sessions with agents, including the expensive ones, and eats into your limits like crazy.
 
