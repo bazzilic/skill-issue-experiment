@@ -78,11 +78,25 @@ Full trace of every session is saved after the scenario finishes. Invocation of 
 
 For every agent and scenario, the report provides the invocation frequency and the compliance frequency as `k/n` (percentage), where `n` is the number of sessions that ran to completion; failed sessions are listed separately and excluded from `n`. In scenarios with a trigger, a session counts as invoked when the trace shows the triggered skill's file being read, and as compliant when that skill's own indicator file exists in the workspace root with the expected text at the end of the session; the other skill's file does not count. In no-trigger scenarios, either skill's invocation or indicator file counts. Force-loaded scenarios have nothing to invoke, so only compliance is reported for them.
 
-| Scenario group | Invocation frequency | Compliance frequency |
-| --- | --- | --- |
-| Visible, no trigger | reported (ideal 0%) | reported (ideal 0%) |
-| Visible, trigger | reported (ideal 100%) | reported (ideal 100%) |
-| Force-loaded, trigger | not applicable | reported (ideal 100%) |
+These are the actual results of a full experiment:
+
+All **1,050 runs completed successfully**. Across the **840 triggered sessions**, there were **25 instances of non-compliance (3.0%)**.
+
+| Model | Effort | Visible skill: misses | Force-loaded: misses | Overall non-compliance* |
+|---|---|---:|---:|---:|
+| Haiku 5.5 | Max | 0 | 1 | 1/40 (2.5%) |
+| GPT 5.6 Terra | Light | 1 | 0 | 1/40 (2.5%) |
+| GPT 6 Luna | High | 0 | 2 | 2/40 (5.0%) |
+| GPT 6 Sol | Light | 3 | 0 | 3/40 (7.5%) |
+| GPT 6 Sol | High | 5 | 3 | 8/40 (20.0%) |
+| GPT 6.1 Sol | Light | 5 | 0 | 5/40 (12.5%) |
+| GPT 6.1 Sol | High | 5 | 0 | 5/40 (12.5%) |
+| Other 14 model/effort configurations | — | 0 | 0 | 0/560 (0%) |
+| **Total** | | **19** | **6** | **25/840 (3.0%)** |
+
+*Overall rates cover all eight triggered scenarios.*
+
+All 25 misses occurred with the **long skill and complex prompt**.
 
 ## Repository
 
